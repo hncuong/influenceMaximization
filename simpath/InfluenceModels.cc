@@ -56,7 +56,7 @@ void InfluenceModels::doAll(int argc, char* argv[])
 
 	cout << "Completed doAll in InfluenceModels" << endl;
 
-	cout << "All memory released, current usage : " << getCurrentMemoryUsage() << endl;
+	cout << "All memory released, current usage : " << getCurrentMemoryUsage() <<" M"<< endl;
 }
 
 

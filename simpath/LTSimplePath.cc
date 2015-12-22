@@ -32,7 +32,7 @@ LTSimplePath::LTSimplePath(AnyOption *opt1) : freeTuples(NULL), freeTuplesSize(0
 
 
 LTSimplePath::~LTSimplePath() {
-    cout << "Total time taken : " << getTime() << endl;
+    cout << "Total time taken : " << getTime() << " seconds"<< endl;
     for (map<UID, xNode *>::iterator i = userNodes->begin(); i != userNodes->end(); ++i) {
         xNode *p = i->second;
         delete p->N_out;
@@ -1296,7 +1296,7 @@ float LTSimplePath::getTime() const {
 	time_t curTime;
 	time(&curTime);
 
-	float min = ((float)(curTime - startTime))/60;
+	float min = ((float)(curTime - startTime));
 	return min;
 }
 
